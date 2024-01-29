@@ -1,0 +1,781 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Fav icon -->
+    <link rel="icon" href="./assets/images/Logo.svg">
+
+    <!-- Css link -->
+    <link rel="stylesheet" href="./style.css">
+
+    <!-- TailwindCss link -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- BoxIcon -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <!-- Bootstrap carousel -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+    <title>NextStore</title>
+</head>
+
+<body>
+    <!-- Header section start -->
+    <header class="sticky top-0 z-10 shadow-black lg:shadow-xl bg-[#fff]">
+        <div class="container px-4 mx-auto">
+            <div class="header-top flex justify-end gap-[180px] py-[7px]">
+                <div class="flex gap-[9px] items-center">
+                    <img src="./assets/images/email.svg" alt="email">
+                    <p class="text-[#1E1E1E] font-[539px] leading-[0.16px]">Aloqa uchun</p>
+                </div>
+                <select class="outline-none relative left-20 text-[#1E1E1E] text-sm cursor-pointer" name="" id="">
+                    <option value="EN">ENG</option>
+                    <option selected value="UZ">UZ</option>
+                </select>
+            </div>
+
+            <div class="header-bottom pt-[13px] pb-[11px]">
+                <ul class="flex items-center justify-between gap-[50px]">
+                    <li><a href="index.html">
+                            <img src="./assets/images/Logo.svg" alt="Logo">
+                        </a></li>
+                    <li><a href="#"><button
+                                class="katalog text-white rounded-lg py-[11px] pl-[18px] pr-[19px] flex items-center gap-3 text-base font-[591]"><i
+                                    class='bx bx-menu text-2xl'></i>Katalog</button></a></li>
+
+                    <li class="flex items-center"><input type="text" placeholder="Maxsulotlarni izlash"
+                            class="cursor-pointer h-[46px] border-[1px] pt-[14px] pb-[13px] pr-[157px] pl-[18px] rounded-l-[8px] placeholder:text-[#6C757D] border-[#E4E7EE] outline-none"><i
+                            class='bx bx-search py-[11px] px-[18px] bg-[#0D63F3] h-[46px] flex justify-center items-center text-white rounded-r-[8px] cursor-pointer'></i>
+                    </li>
+
+                    <li class="mr-[-60px]"><a href="#"><img src="./assets/images/favorite.svg" alt="favorite"
+                                class="cursor-pointer"></a>
+                    </li>
+                    <li><a href="#"><img src="./assets/images/Korzina.svg" alt="Korzina" class="cursor-pointer"></a>
+                    </li>
+                    <li><a href="#"><button
+                                class="kirish-btn py-[13px] px-[35px] rounded-[10px] text-[#101828] font-[539] ">Kirish</button></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <!-- Header section end -->
+
+    <main class="bg-[#ECF4FF] z-[-5]">
+
+        <section class="swiper py-10">
+            <div class="container px-4 mx-auto">
+                <div id="carouselExampleCaptions" class="carousel slide" autoplay="true">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0"
+                            class="active relative" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                            aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                            aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner rounded-[20px]">
+                        <div class="carousel-item active">
+                            <img src="./assets/images/swiper-bg.png" class="d-block w-100  " alt="...">
+
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./assets/images/swiper-bg-1.png" class="d-block w-100 " alt="...">
+                        </div>
+
+                        <div class="carousel-item">
+                            <img src="./assets/images/swiper-bg-2.png" class="d-block w-100 " alt="...">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev pr-[90px]" type="button"
+                        data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next pl-[90px]" type="button"
+                        data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <section class="category">
+            <div class="container px-4 mx-auto">
+                <h1 class="text-[#1E1E1E] font-[591] text-[28px] mb-5">Kategoriyalar</h1>
+
+                <div class="flex justify-between mb-5">
+                    <img src="./assets/images/Kategoriyalar1.svg" alt="iphone">
+                    <img src="./assets/images/Kategoriyalar2.svg" alt="laptop">
+                    <img src="./assets/images/Kategoriyalar3.svg" alt="tv">
+                    <img src="./assets/images/Kategoriyalar4.svg" alt="watch">
+                    <img src="./assets/images/Kategoriyalar5.svg" alt="airpods">
+                    <img src="./assets/images/Kategoriyalar6.svg" alt="condition">
+                    <img src="./assets/images/Kategoriyalar7.svg" alt="freezer">
+                    <img src="./assets/images/Kategoriyalar8.svg" alt="wachine">
+                </div>
+
+                <button class="py-[17px] bg-white text-center rounded-[10px] w-[100%] mb-10 "><a href="#"
+                        class="text-[#1E1E1E] text-lg font-[591] text-center">Batafsil</a></button>
+
+
+            </div>
+        </section>
+
+        <section class="theMostSale">
+            <div class="container px-4 mx-auto">
+                <h1 class="text-[#1E1E1E] font-[591] text-[28px] mb-5">Eng ko’p sotilgan</h1>
+
+                <div class="flex flex-wrap justify-between mb-[37px] gap-y-4">
+
+                    <div class="card px-[10px] h-[408px] w-[230px] bg-white border-none">
+
+                        <a href="#">
+                            <img src="./assets/images/heart.svg" alt="favourite"
+                                class="absolute right-[14px] top-[14px] z-1">
+                        </a>
+                        <a href="#">
+                            <img src="./assets/images/laptops.svg" alt="macbook"
+                                class="w-[180px] relative left-[14px] -bottom-3 ">
+                        </a>
+
+                        <div class="px-[10px] pt-[10px]">
+                            <h3 class="text-[#0D63F3] text-lg font-[591] pb-[6px]">299 000 so’m</h3>
+
+                            <p class="text-[14px] pb-[33px] text-[#1E1E1E]">Apple Airpods Pro
+                                simsiz quloqchin , Oq rangda</p>
+
+                            <span class="text-[#6C757D] text-sm">1230 ta buyurtma</span>
+
+                            <div class="flex justify-between items-center mt-[25px] pb-0 mb-0">
+                                <button
+                                    class="py-[10px] px-[25px] bg-[#0D63F3] rounded-lg text-white text-base hover:bg-[#0d61f3d1]">Sotib
+                                    olish</button>
+                                <img src="./assets/images/shopping_cart1.svg" alt="shopping-cart"
+                                    class="h-[29px] cursor-pointer">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card px-[10px] h-[408px] w-[230px] bg-white border-none">
+
+                        <a href="#">
+                            <img src="./assets/images/heart.svg" alt="favourite"
+                                class="absolute right-[14px] top-[14px] z-1">
+                        </a>
+                        <a href="#">
+                            <img src="./assets/images/laptops.svg" alt="macbook"
+                                class="w-[180px] relative left-[14px] -bottom-3 ">
+                        </a>
+
+                        <div class="px-[10px] pt-[10px]">
+                            <h3 class="text-[#0D63F3] text-lg font-[591] pb-[6px]">16 114 285 so'm</h3>
+
+                            <p class="text-[14px] pb-[33px] text-[#1E1E1E]">Apple Macbook Pro
+                                13" 2.4 2019 Intel core i5
+                                DDR3</p>
+
+                            <span class="text-[#6C757D] text-sm">230 ta buyurtma</span>
+
+                            <div class="flex justify-between items-center mt-[25px] pb-0 mb-0">
+                                <button
+                                    class="py-[10px] px-[25px] bg-[#0D63F3] rounded-lg text-white text-base hover:bg-[#0d61f3d1]">Sotib
+                                    olish</button>
+                                <img src="./assets/images/shopping_cart1.svg" alt="shopping-cart"
+                                    class="h-[29px] cursor-pointer">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card px-[10px] h-[408px] w-[230px] bg-white border-none">
+
+                        <a href="#">
+                            <img src="./assets/images/heart.svg" alt="favourite"
+                                class="absolute right-[14px] top-[14px] z-1">
+                        </a>
+                        <a href="#">
+                            <img src="./assets/images/laptops.svg" alt="macbook"
+                                class="w-[180px] relative left-[14px] -bottom-3 ">
+                        </a>
+
+                        <div class="px-[10px] pt-[10px]">
+                            <h3 class="text-[#0D63F3] text-lg font-[591] pb-[6px]">4 234 000 so’m</h3>
+
+                            <p class="text-[14px] pb-[33px] text-[#1E1E1E] mb-[21px]">Apple watch 4</p>
+
+                            <span class="text-[#6C757D] text-sm">543 ta buyurtma</span>
+
+                            <div class="flex justify-between items-center mt-[25px] pb-0 mb-0">
+                                <button
+                                    class="py-[10px] px-[25px] bg-[#0D63F3] rounded-lg text-white text-base hover:bg-[#0d61f3d1]">Sotib
+                                    olish</button>
+                                <img src="./assets/images/shopping_cart1.svg" alt="shopping-cart"
+                                    class="h-[29px] cursor-pointer">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card px-[10px] h-[408px] w-[230px] bg-white border-none">
+
+                        <a href="#">
+                            <img src="./assets/images/heart.svg" alt="favourite"
+                                class="absolute right-[14px] top-[14px] z-1">
+                        </a>
+                        <a href="#">
+                            <img src="./assets/images/laptops.svg" alt="macbook"
+                                class="w-[180px] relative left-[14px] -bottom-3 ">
+                        </a>
+
+                        <div class="px-[10px] pt-[10px]">
+                            <h3 class="text-[#0D63F3] text-lg font-[591] pb-[6px]">1 340 000 so’m</h3>
+
+                            <p class="text-[14px] pb-[33px] text-[#1E1E1E]">Robot - tozalagich Xiaomi
+                                Mi Robot</p>
+
+                            <span class="text-[#6C757D] text-sm">876 ta buyurtma</span>
+
+                            <div class="flex justify-between items-center mt-[25px] pb-0 mb-0">
+                                <button
+                                    class="py-[10px] px-[25px] bg-[#0D63F3] rounded-lg text-white text-base hover:bg-[#0d61f3d1]">Sotib
+                                    olish</button>
+                                <img src="./assets/images/shopping_cart1.svg" alt="shopping-cart"
+                                    class="h-[29px] cursor-pointer">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card px-[10px] h-[408px] w-[230px] bg-white border-none">
+
+                        <a href="#">
+                            <img src="./assets/images/heart.svg" alt="favourite"
+                                class="absolute right-[14px] top-[14px] z-1">
+                        </a>
+                        <a href="#">
+                            <img src="./assets/images/laptops.svg" alt="macbook"
+                                class="w-[180px] relative left-[14px] -bottom-3 ">
+                        </a>
+
+                        <div class="px-[10px] pt-[10px]">
+                            <h3 class="text-[#0D63F3] text-lg font-[591] pb-[6px]">1 345 000 so’m</h3>
+
+                            <p class="text-[14px] pb-[33px] text-[#1E1E1E]">Oynali Fotoaparat
+                                Canon EOS 6D Body</p>
+
+                            <span class="text-[#6C757D] text-sm">1230 ta buyurtma</span>
+
+                            <div class="flex justify-between items-center mt-[25px] pb-0 mb-0">
+                                <button
+                                    class="py-[10px] px-[25px] bg-[#0D63F3] rounded-lg text-white text-base hover:bg-[#0d61f3d1]">Sotib
+                                    olish</button>
+                                <img src="./assets/images/shopping_cart1.svg" alt="shopping-cart"
+                                    class="h-[29px] cursor-pointer">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card px-[10px] h-[408px] w-[230px] bg-white border-none">
+
+                        <a href="#">
+                            <img src="./assets/images/heart.svg" alt="favourite"
+                                class="absolute right-[14px] top-[14px] z-1">
+                        </a>
+                        <a href="#">
+                            <img src="./assets/images/laptops.svg" alt="macbook"
+                                class="w-[180px] relative left-[14px] -bottom-3 ">
+                        </a>
+
+                        <div class="px-[10px] pt-[10px]">
+                            <h3 class="text-[#0D63F3] text-lg font-[591] pb-[6px]">299 000 so’m</h3>
+
+                            <p class="text-[14px] pb-[33px] text-[#1E1E1E]">Apple Airpods Pro
+                                simsiz quloqchin , Oq rangda</p>
+
+                            <span class="text-[#6C757D] text-sm">1230 ta buyurtma</span>
+
+                            <div class="flex justify-between items-center mt-[25px] pb-0 mb-0">
+                                <button
+                                    class="py-[10px] px-[25px] bg-[#0D63F3] rounded-lg text-white text-base hover:bg-[#0d61f3d1]">Sotib
+                                    olish</button>
+                                <img src="./assets/images/shopping_cart1.svg" alt="shopping-cart"
+                                    class="h-[29px] cursor-pointer">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card px-[10px] h-[408px] w-[230px] bg-white border-none">
+
+                        <a href="#">
+                            <img src="./assets/images/heart.svg" alt="favourite"
+                                class="absolute right-[14px] top-[14px] z-1">
+                        </a>
+                        <a href="#">
+                            <img src="./assets/images/laptops.svg" alt="macbook"
+                                class="w-[180px] relative left-[14px] -bottom-3 ">
+                        </a>
+
+                        <div class="px-[10px] pt-[10px]">
+                            <h3 class="text-[#0D63F3] text-lg font-[591] pb-[6px]">16 114 285 so'm</h3>
+
+                            <p class="text-[14px] pb-[33px] text-[#1E1E1E]">Apple Macbook Pro
+                                13" 2.4 2019 Intel core i5
+                                DDR3</p>
+
+                            <span class="text-[#6C757D] text-sm">230 ta buyurtma</span>
+
+                            <div class="flex justify-between items-center mt-[25px] pb-0 mb-0">
+                                <button
+                                    class="py-[10px] px-[25px] bg-[#0D63F3] rounded-lg text-white text-base hover:bg-[#0d61f3d1]">Sotib
+                                    olish</button>
+                                <img src="./assets/images/shopping_cart1.svg" alt="shopping-cart"
+                                    class="h-[29px] cursor-pointer">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card px-[10px] h-[408px] w-[230px] bg-white border-none">
+
+                        <a href="#">
+                            <img src="./assets/images/heart.svg" alt="favourite"
+                                class="absolute right-[14px] top-[14px] z-1">
+                        </a>
+                        <a href="#">
+                            <img src="./assets/images/laptops.svg" alt="macbook"
+                                class="w-[180px] relative left-[14px] -bottom-3 ">
+                        </a>
+
+                        <div class="px-[10px] pt-[10px]">
+                            <h3 class="text-[#0D63F3] text-lg font-[591] pb-[6px]">4 234 000 so’m</h3>
+
+                            <p class="text-[14px] pb-[33px] text-[#1E1E1E] mb-[21px]">Apple watch 4</p>
+
+                            <span class="text-[#6C757D] text-sm">543 ta buyurtma</span>
+
+                            <div class="flex justify-between items-center mt-[25px] pb-0 mb-0">
+                                <button
+                                    class="py-[10px] px-[25px] bg-[#0D63F3] rounded-lg text-white text-base hover:bg-[#0d61f3d1]">Sotib
+                                    olish</button>
+                                <img src="./assets/images/shopping_cart1.svg" alt="shopping-cart"
+                                    class="h-[29px] cursor-pointer">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card px-[10px] h-[408px] w-[230px] bg-white border-none">
+
+                        <a href="#">
+                            <img src="./assets/images/heart.svg" alt="favourite"
+                                class="absolute right-[14px] top-[14px] z-1">
+                        </a>
+                        <a href="#">
+                            <img src="./assets/images/laptops.svg" alt="macbook"
+                                class="w-[180px] relative left-[14px] -bottom-3 ">
+                        </a>
+
+                        <div class="px-[10px] pt-[10px]">
+                            <h3 class="text-[#0D63F3] text-lg font-[591] pb-[6px]">1 340 000 so’m</h3>
+
+                            <p class="text-[14px] pb-[33px] text-[#1E1E1E]">Robot - tozalagich Xiaomi
+                                Mi Robot</p>
+
+                            <span class="text-[#6C757D] text-sm">876 ta buyurtma</span>
+
+                            <div class="flex justify-between items-center mt-[25px] pb-0 mb-0">
+                                <button
+                                    class="py-[10px] px-[25px] bg-[#0D63F3] rounded-lg text-white text-base hover:bg-[#0d61f3d1]">Sotib
+                                    olish</button>
+                                <img src="./assets/images/shopping_cart1.svg" alt="shopping-cart"
+                                    class="h-[29px] cursor-pointer">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card px-[10px] h-[408px] w-[230px] bg-white border-none">
+
+                        <a href="#">
+                            <img src="./assets/images/heart.svg" alt="favourite"
+                                class="absolute right-[14px] top-[14px] z-1">
+                        </a>
+                        <a href="#">
+                            <img src="./assets/images/laptops.svg" alt="macbook"
+                                class="w-[180px] relative left-[14px] -bottom-3 ">
+                        </a>
+
+                        <div class="px-[10px] pt-[10px]">
+                            <h3 class="text-[#0D63F3] text-lg font-[591] pb-[6px]">1 345 000 so’m</h3>
+
+                            <p class="text-[14px] pb-[33px] text-[#1E1E1E]">Oynali Fotoaparat
+                                Canon EOS 6D Body</p>
+
+                            <span class="text-[#6C757D] text-sm">1230 ta buyurtma</span>
+
+                            <div class="flex justify-between items-center mt-[25px] pb-0 mb-0">
+                                <button
+                                    class="py-[10px] px-[25px] bg-[#0D63F3] rounded-lg text-white text-base hover:bg-[#0d61f3d1]">Sotib
+                                    olish</button>
+                                <img src="./assets/images/shopping_cart1.svg" alt="shopping-cart"
+                                    class="h-[29px] cursor-pointer">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <button class="py-[17px] bg-white text-center rounded-[10px] w-[100%] mb-10 "><a href="#"
+                        class="text-[#1E1E1E] text-lg font-[591] text-center">Ko'proq ko'rish</a></button>
+            </div>
+        </section>
+
+        <section class="swiper-2 mb-[60px]">
+            <div class="container px-4 mx-auto">
+                <div id="carouselExampleIndicators" class="carousel slide">
+                    <div class="carousel-indicators rounded-[20px]">
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                            class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                            aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                            aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner rounded-[20px]">
+                        <div class="carousel-item active">
+                            <img src="./assets/images/swiper-bg2.png" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./assets/images/swiper-bg2-1.png" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./assets/images/swiper-bg2.png" class="d-block w-100" alt="...">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <section class="theMostPopular">
+            <div class="container px-4 mx-auto">
+                <h1 class="text-[#1E1E1E] font-[591] text-[28px] mb-5">Eng ommabop</h1>
+
+                <div class="flex flex-wrap justify-between mb-[37px] gap-y-4">
+
+                    <div class="card px-[10px] h-[408px] w-[230px] bg-white border-none">
+
+                        <a href="#">
+                            <img src="./assets/images/heart.svg" alt="favourite"
+                                class="absolute right-[14px] top-[14px] z-1">
+                        </a>
+                        <a href="#">
+                            <img src="./assets/images/laptops.svg" alt="macbook"
+                                class="w-[180px] relative left-[14px] -bottom-3 ">
+                        </a>
+
+                        <div class="px-[10px] pt-[10px]">
+                            <h3 class="text-[#0D63F3] text-lg font-[591] pb-[6px]">299 000 so’m</h3>
+
+                            <p class="text-[14px] pb-[33px] text-[#1E1E1E]">Apple Airpods Pro
+                                simsiz quloqchin , Oq rangda</p>
+
+                            <span class="text-[#6C757D] text-sm">1230 ta buyurtma</span>
+
+                            <div class="flex justify-between items-center mt-[25px] pb-0 mb-0">
+                                <button
+                                    class="py-[10px] px-[25px] bg-[#0D63F3] rounded-lg text-white text-base hover:bg-[#0d61f3d1]">Sotib
+                                    olish</button>
+                                <img src="./assets/images/shopping_cart1.svg" alt="shopping-cart"
+                                    class="h-[29px] cursor-pointer">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card px-[10px] h-[408px] w-[230px] bg-white border-none">
+
+                        <a href="#">
+                            <img src="./assets/images/heart.svg" alt="favourite"
+                                class="absolute right-[14px] top-[14px] z-1">
+                        </a>
+                        <a href="#">
+                            <img src="./assets/images/laptops.svg" alt="macbook"
+                                class="w-[180px] relative left-[14px] -bottom-3 ">
+                        </a>
+
+                        <div class="px-[10px] pt-[10px]">
+                            <h3 class="text-[#0D63F3] text-lg font-[591] pb-[6px]">16 114 285 so'm</h3>
+
+                            <p class="text-[14px] pb-[33px] text-[#1E1E1E]">Apple Macbook Pro
+                                13" 2.4 2019 Intel core i5
+                                DDR3</p>
+
+                            <span class="text-[#6C757D] text-sm">230 ta buyurtma</span>
+
+                            <div class="flex justify-between items-center mt-[25px] pb-0 mb-0">
+                                <button
+                                    class="py-[10px] px-[25px] bg-[#0D63F3] rounded-lg text-white text-base hover:bg-[#0d61f3d1]">Sotib
+                                    olish</button>
+                                <img src="./assets/images/shopping_cart1.svg" alt="shopping-cart"
+                                    class="h-[29px] cursor-pointer">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card px-[10px] h-[408px] w-[230px] bg-white border-none">
+
+                        <a href="#">
+                            <img src="./assets/images/heart.svg" alt="favourite"
+                                class="absolute right-[14px] top-[14px] z-1">
+                        </a>
+                        <a href="#">
+                            <img src="./assets/images/laptops.svg" alt="macbook"
+                                class="w-[180px] relative left-[14px] -bottom-3 ">
+                        </a>
+
+                        <div class="px-[10px] pt-[10px]">
+                            <h3 class="text-[#0D63F3] text-lg font-[591] pb-[6px]">4 234 000 so’m</h3>
+
+                            <p class="text-[14px] pb-[33px] text-[#1E1E1E] mb-[21px]">Apple watch 4</p>
+
+                            <span class="text-[#6C757D] text-sm">543 ta buyurtma</span>
+
+                            <div class="flex justify-between items-center mt-[25px] pb-0 mb-0">
+                                <button
+                                    class="py-[10px] px-[25px] bg-[#0D63F3] rounded-lg text-white text-base hover:bg-[#0d61f3d1]">Sotib
+                                    olish</button>
+                                <img src="./assets/images/shopping_cart1.svg" alt="shopping-cart"
+                                    class="h-[29px] cursor-pointer">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card px-[10px] h-[408px] w-[230px] bg-white border-none">
+
+                        <a href="#">
+                            <img src="./assets/images/heart.svg" alt="favourite"
+                                class="absolute right-[14px] top-[14px] z-1">
+                        </a>
+                        <a href="#">
+                            <img src="./assets/images/laptops.svg" alt="macbook"
+                                class="w-[180px] relative left-[14px] -bottom-3 ">
+                        </a>
+
+                        <div class="px-[10px] pt-[10px]">
+                            <h3 class="text-[#0D63F3] text-lg font-[591] pb-[6px]">1 340 000 so’m</h3>
+
+                            <p class="text-[14px] pb-[33px] text-[#1E1E1E]">Robot - tozalagich Xiaomi
+                                Mi Robot</p>
+
+                            <span class="text-[#6C757D] text-sm">876 ta buyurtma</span>
+
+                            <div class="flex justify-between items-center mt-[25px] pb-0 mb-0">
+                                <button
+                                    class="py-[10px] px-[25px] bg-[#0D63F3] rounded-lg text-white text-base hover:bg-[#0d61f3d1]">Sotib
+                                    olish</button>
+                                <img src="./assets/images/shopping_cart1.svg" alt="shopping-cart"
+                                    class="h-[29px] cursor-pointer">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card px-[10px] h-[408px] w-[230px] bg-white border-none">
+
+                        <a href="#">
+                            <img src="./assets/images/heart.svg" alt="favourite"
+                                class="absolute right-[14px] top-[14px] z-1">
+                        </a>
+                        <a href="#">
+                            <img src="./assets/images/laptops.svg" alt="macbook"
+                                class="w-[180px] relative left-[14px] -bottom-3 ">
+                        </a>
+
+                        <div class="px-[10px] pt-[10px]">
+                            <h3 class="text-[#0D63F3] text-lg font-[591] pb-[6px]">1 345 000 so’m</h3>
+
+                            <p class="text-[14px] pb-[33px] text-[#1E1E1E]">Oynali Fotoaparat
+                                Canon EOS 6D Body</p>
+
+                            <span class="text-[#6C757D] text-sm">1230 ta buyurtma</span>
+
+                            <div class="flex justify-between items-center mt-[25px] pb-0 mb-0">
+                                <button
+                                    class="py-[10px] px-[25px] bg-[#0D63F3] rounded-lg text-white text-base hover:bg-[#0d61f3d1]">Sotib
+                                    olish</button>
+                                <img src="./assets/images/shopping_cart1.svg" alt="shopping-cart"
+                                    class="h-[29px] cursor-pointer">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card px-[10px] h-[408px] w-[230px] bg-white border-none">
+
+                        <a href="#">
+                            <img src="./assets/images/heart.svg" alt="favourite"
+                                class="absolute right-[14px] top-[14px] z-1">
+                        </a>
+                        <a href="#">
+                            <img src="./assets/images/laptops.svg" alt="macbook"
+                                class="w-[180px] relative left-[14px] -bottom-3 ">
+                        </a>
+
+                        <div class="px-[10px] pt-[10px]">
+                            <h3 class="text-[#0D63F3] text-lg font-[591] pb-[6px]">299 000 so’m</h3>
+
+                            <p class="text-[14px] pb-[33px] text-[#1E1E1E]">Apple Airpods Pro
+                                simsiz quloqchin , Oq rangda</p>
+
+                            <span class="text-[#6C757D] text-sm">1230 ta buyurtma</span>
+
+                            <div class="flex justify-between items-center mt-[25px] pb-0 mb-0">
+                                <button
+                                    class="py-[10px] px-[25px] bg-[#0D63F3] rounded-lg text-white text-base hover:bg-[#0d61f3d1]">Sotib
+                                    olish</button>
+                                <img src="./assets/images/shopping_cart1.svg" alt="shopping-cart"
+                                    class="h-[29px] cursor-pointer">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card px-[10px] h-[408px] w-[230px] bg-white border-none">
+
+                        <a href="#">
+                            <img src="./assets/images/heart.svg" alt="favourite"
+                                class="absolute right-[14px] top-[14px] z-1">
+                        </a>
+                        <a href="#">
+                            <img src="./assets/images/laptops.svg" alt="macbook"
+                                class="w-[180px] relative left-[14px] -bottom-3 ">
+                        </a>
+
+                        <div class="px-[10px] pt-[10px]">
+                            <h3 class="text-[#0D63F3] text-lg font-[591] pb-[6px]">16 114 285 so'm</h3>
+
+                            <p class="text-[14px] pb-[33px] text-[#1E1E1E]">Apple Macbook Pro
+                                13" 2.4 2019 Intel core i5
+                                DDR3</p>
+
+                            <span class="text-[#6C757D] text-sm">230 ta buyurtma</span>
+
+                            <div class="flex justify-between items-center mt-[25px] pb-0 mb-0">
+                                <button
+                                    class="py-[10px] px-[25px] bg-[#0D63F3] rounded-lg text-white text-base hover:bg-[#0d61f3d1]">Sotib
+                                    olish</button>
+                                <img src="./assets/images/shopping_cart1.svg" alt="shopping-cart"
+                                    class="h-[29px] cursor-pointer">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card px-[10px] h-[408px] w-[230px] bg-white border-none">
+
+                        <a href="#">
+                            <img src="./assets/images/heart.svg" alt="favourite"
+                                class="absolute right-[14px] top-[14px] z-1">
+                        </a>
+                        <a href="#">
+                            <img src="./assets/images/laptops.svg" alt="macbook"
+                                class="w-[180px] relative left-[14px] -bottom-3 ">
+                        </a>
+
+                        <div class="px-[10px] pt-[10px]">
+                            <h3 class="text-[#0D63F3] text-lg font-[591] pb-[6px]">4 234 000 so’m</h3>
+
+                            <p class="text-[14px] pb-[33px] text-[#1E1E1E] mb-[21px]">Apple watch 4</p>
+
+                            <span class="text-[#6C757D] text-sm">543 ta buyurtma</span>
+
+                            <div class="flex justify-between items-center mt-[25px] pb-0 mb-0">
+                                <button
+                                    class="py-[10px] px-[25px] bg-[#0D63F3] rounded-lg text-white text-base hover:bg-[#0d61f3d1]">Sotib
+                                    olish</button>
+                                <img src="./assets/images/shopping_cart1.svg" alt="shopping-cart"
+                                    class="h-[29px] cursor-pointer">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card px-[10px] h-[408px] w-[230px] bg-white border-none">
+
+                        <a href="#">
+                            <img src="./assets/images/heart.svg" alt="favourite"
+                                class="absolute right-[14px] top-[14px] z-1">
+                        </a>
+                        <a href="#">
+                            <img src="./assets/images/laptops.svg" alt="macbook"
+                                class="w-[180px] relative left-[14px] -bottom-3 ">
+                        </a>
+
+                        <div class="px-[10px] pt-[10px]">
+                            <h3 class="text-[#0D63F3] text-lg font-[591] pb-[6px]">1 340 000 so’m</h3>
+
+                            <p class="text-[14px] pb-[33px] text-[#1E1E1E]">Robot - tozalagich Xiaomi
+                                Mi Robot</p>
+
+                            <span class="text-[#6C757D] text-sm">876 ta buyurtma</span>
+
+                            <div class="flex justify-between items-center mt-[25px] pb-0 mb-0">
+                                <button
+                                    class="py-[10px] px-[25px] bg-[#0D63F3] rounded-lg text-white text-base hover:bg-[#0d61f3d1]">Sotib
+                                    olish</button>
+                                <img src="./assets/images/shopping_cart1.svg" alt="shopping-cart"
+                                    class="h-[29px] cursor-pointer">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card px-[10px] h-[408px] w-[230px] bg-white border-none">
+
+                        <a href="#">
+                            <img src="./assets/images/heart.svg" alt="favourite"
+                                class="absolute right-[14px] top-[14px] z-1">
+                        </a>
+                        <a href="#">
+                            <img src="./assets/images/laptops.svg" alt="macbook"
+                                class="w-[180px] relative left-[14px] -bottom-3 ">
+                        </a>
+
+                        <div class="px-[10px] pt-[10px]">
+                            <h3 class="text-[#0D63F3] text-lg font-[591] pb-[6px]">1 345 000 so’m</h3>
+
+                            <p class="text-[14px] pb-[33px] text-[#1E1E1E]">Oynali Fotoaparat
+                                Canon EOS 6D Body</p>
+
+                            <span class="text-[#6C757D] text-sm">1230 ta buyurtma</span>
+
+                            <div class="flex justify-between items-center mt-[25px] pb-0 mb-0">
+                                <button
+                                    class="py-[10px] px-[25px] bg-[#0D63F3] rounded-lg text-white text-base hover:bg-[#0d61f3d1]">Sotib
+                                    olish</button>
+                                <img src="./assets/images/shopping_cart1.svg" alt="shopping-cart"
+                                    class="h-[29px] cursor-pointer">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <button class="py-[17px] bg-white text-center rounded-[10px] w-[100%] mb-10 "><a href="#"
+                        class="text-[#1E1E1E] text-lg font-[591] text-center">Ko'proq ko'rish</a></button>
+            </div>
+        </section>
+    </main>
+
+</body>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+    integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+    crossorigin="anonymous"></script>
+
+</html>

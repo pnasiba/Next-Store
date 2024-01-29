@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 1255px !important;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.katalog {
+    background: linear-gradient(270deg, #4D5EF6 0%, #F64D4D 100%);
+}
+
+.kirish-btn {
+    background: linear-gradient(270deg, rgba(77, 94, 246, 0.20) 0%, rgba(246, 77, 77, 0.20) 100%);
+}
