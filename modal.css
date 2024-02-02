@@ -1,0 +1,74 @@
+/* Dropdown btn */
+.modal_wrapper {
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    z-index: 9999;
+    display: flex;
+    justify-content: center;
+    display: none;
+}
+
+.modal_wrapper .modal_content {
+    width: 275px;
+    background-color: #fff;
+    height: 190px;
+    border-radius: 12px;
+    position: absolute;
+    right: 340px;
+    top: 100px;
+}
+
+
+
+/* Enter btn */
+
+.modal_enter {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    min-height: 400vh;
+    background-color: #000000b7;
+    z-index: 9999;
+    display: flex;
+    justify-content: center;
+    padding-top: 260px;
+    display: none;
+}
+
+.modal_enter .enter_content {
+    width: 466px;
+    background-color: #fff;
+    height: 425px;
+    border-radius: 12px;
+}
+
+.modal-enter_header {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Catalog btn */
+
+
+/* 
+.modal_catalog {
+    position: absolute;
+    left: -1;
+    top: 0;
+    width: 100%;
+    min-height: 400vh;
+    background-color: #fff;
+    z-index: 9999;
+    display: flex;
+    justify-content: center;
+    padding-top: 260px;
+    display: none;
+}
+
+.modal_catalog .catalog_content {
+    width: 800px;
+    background-color: #fff;
+    height: 818px;
+} */

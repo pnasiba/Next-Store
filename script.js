@@ -1,3 +1,7 @@
+("use strict");
+
+// For Carousel
+
 let wrapper = document.querySelector(".card__wrapper");
 let mostSale = document.querySelector(".most_sale");
 
@@ -68,3 +72,106 @@ data.forEach((el) => {
     `;
   mostSale.append(cards);
 });
+
+// For Carousel
+
+// Loader and dropdown
+
+let loadWrapper = document.querySelector(".load_wrapper");
+
+window.addEventListener("DOMContentLoaded", () => {
+  loadWrapper.style.display = "flex";
+  document.body.style.overflow = "hidden";
+});
+
+window.addEventListener("load", () => {
+  setTimeout(() => {
+    loadWrapper.style.display = "none";
+    document.body.style.overflow = "visible";
+  }, 1500);
+});
+
+let modalWrapper = document.querySelector(".modal_wrapper"),
+  open = document.querySelector("#user-account"),
+  close = document.querySelector("#close");
+
+open.addEventListener("click", () => {
+  modalWrapper.style.display = "flex";
+  document.body.style.overflow = "hidden";
+});
+
+close.addEventListener("click", () => {
+  modalWrapper.style.display = "none";
+  document.body.style.overflow = "visible";
+});
+
+modalWrapper.addEventListener("click", (e) => {
+  if (e.target.classList.contains("modal_body")) {
+    modalWrapper.style.display = "flex";
+    console.log(e.target.classList);
+    document.body.style.overflow = "hidden";
+  } else {
+    modalWrapper.style.display = "none";
+    console.log(e.target.classList);
+    document.body.style.overflow = "visible";
+  }
+});
+
+// Loader and dropdown
+
+let allModal = document.querySelector(".modal_enter"),
+  enter = document.querySelector("#enter-btn"),
+  exit = document.querySelector("#exit");
+
+enter.addEventListener("click", () => {
+  allModal.style.display = "flex";
+  document.body.style.overflow = "hidden";
+});
+
+exit.addEventListener("click", () => {
+  allModal.style.display = "none";
+  document.body.style.overflow = "visible";
+});
+
+allModal.addEventListener("click", (e) => {
+  if (
+    e.target.classList.contains("modal-enter_header") ||
+    e.target.classList.contains("modal-items") ||
+    e.target.classList.contains("enter_body")
+  ) {
+    allModal.style.display = "flex";
+    console.log(e.target.classList);
+    document.body.style.overflow = "hidden";
+  } else {
+    allModal.style.display = "none";
+    console.log(e.target.classList);
+    document.body.style.overflow = "visible";
+  }
+});
+
+// Catalog btn
+
+// let catalogWrapper = document.querySelector(".modal_catalog"),
+//   opened = document.querySelector("#catalog-btn")
+
+// opened.addEventListener("click", () => {
+//   catalogWrapper.style.display = "flex";
+//   document.body.style.overflow = "hidden";
+// });
+
+// close.addEventListener("click", () => {
+//   catalogWrapper.style.display = "none";
+//   document.body.style.overflow = "visible";
+// });
+
+// catalogWrapper.addEventListener("click", (e) => {
+//   if (e.target.classList.contains("catalog_body")) {
+//     catalogWrapper.style.display = "flex";
+//     console.log(e.target.classList);
+//     document.body.style.overflow = "hidden";
+//   } else {
+//     catalogWrapper.style.display = "none";
+//     console.log(e.target.classList);
+//     document.body.style.overflow = "visible";
+//   }
+// });

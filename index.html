@@ -14,6 +14,12 @@
     <!-- TailwindCss link -->
     <script src="https://cdn.tailwindcss.com"></script>
 
+    <!-- LOADER CSS  -->
+    <link rel="stylesheet" href="./loader.css">
+
+    <!-- MODAL WINDOW CSS -->
+    <link rel="stylesheet" href="./modal.css">
+
     <!-- BoxIcon -->
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 
@@ -25,6 +31,206 @@
 </head>
 
 <body>
+
+
+    <!-- LOADER COMPONENT -->
+    <div class="load_wrapper">
+        <span class="loader"></span>
+    </div>
+
+
+    <!-- MODAL CONTENT -->
+    <div class="modal_wrapper">
+        <div class="modal_content">
+
+            <div class="modal_body p-3">
+
+                <div class="flex justify-between mb-2 items-center">
+                    <p class="font-medium text-lg">Alixonov Asrorjon</p>
+                    <p id="close" class="text-red-600 font-medium cursor-pointer">Chiqish</p>
+                </div>
+                <div>
+                    <div class="flex gap-2 mb-1 items-center">
+                        <img src="./assets/images/user-icon.svg" alt="user">
+                        <p><a href="#">Shaxsiy ma'lumotlar</a></p>
+                    </div>
+
+                    <div class="flex gap-2 mb-1 items-center">
+                        <img src="./assets/images/check-icon.svg" alt="check-icon" class="w-6">
+                        <p><a href="#">Mening buyurtmalarim</a></p>
+                    </div>
+
+                    <div class="flex gap-2 mb-1 items-center">
+                        <img src="./assets/images/favorite_border.svg" alt="favorite">
+                        <p><a href="#">Sevimlilar</a></p>
+                    </div>
+
+                    <div class="flex gap-2 mb-1 items-center">
+                        <img src="./assets/images/location.svg" alt="location">
+                        <p><a href="#">Manzillar</a></p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="modal_enter">
+        <div class="enter_content">
+
+            <div class="enter_body p-3">
+                <div class="modal-enter_header mb-14">
+                    <span> </span> <span id="exit"> <i class='bx bx-x text-3xl'></i></span>
+                </div>
+
+                <div class="modal-items px-5">
+                    <h3 class="font-medium mb-10 text-[26px] text-center">Hisobga kirish uchun</h3>
+                    <button
+                        class="py-[6px] mb-3 bg-blue-600 text-white w-[100%] text-[17px] rounded-[8px]">Kirish</button>
+                    <p class="text-[#6C757D] mb-3 text-center">Yoki</p>
+                    <button class="check py-[6px] rounded-[8px] w-[100%]">Ro'yhatdan o'tish</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- <div class="modal_catalog">
+        <div class="catalog_content">
+
+            <div class="catalog_body flex mx-auto p-4">
+
+                <div class="w-[288px] bg-sky-500">
+                    <div class="flex gap-1 mb-[6px]">
+                        <img src="./assets/images/fire.svg" alt="fire">
+                        <p>Aksiya</p>
+                    </div>
+                    <p class="mb-[6px]">Kompyuterlar va notebooklar</p>
+                    <p class="mb-[6px]">Telefonlar</p>
+                    <p class="mb-[6px]">Maishiy texnika</p>
+                    <p class="mb-[6px]">Erkaklar uchun kiyim</p>
+                    <p class="mb-[6px]">Ayollar uchun kiyimlar</p>
+                    <p class="mb-[6px]">Bolalar uchun</p>
+                    <p class="mb-[6px]">Avtomobil mahsulotlari</p>
+                    <p class="mb-[6px]">Go'zallik va so'glik</p>
+                    <p class="mb-[6px]">Sport va o'yin-kulgi</p>
+                    <p class="mb-[6px]">Uy hayvonlari uchun tovarlar</p>
+                    <p class="mb-[6px]">Xobbi va ijodkorlik</p>
+                    <p class="mb-[6px]">Kantselyariya buyumlari</p>
+                    <p class="mb-[6px]">Maishiy kimyo</p>
+                    <p class="mb-[6px]">Sport va o'yin-kulgi</p>
+                    <p class="mb-[6px]">Uy hayvonlari uchun tovarlar</p>
+                    <p class="mb-[6px]">Aksesuarlar</p>
+                </div>
+                <div class="flex p-4">
+
+                    <div class="w-[208px]">
+                        <p class="mb-2 font-medium">Brendlar</p>
+                        <p>Samsung</p>
+                        <p>Vivo</p>
+                        <p>Tecno</p>
+                        <p>Realme</p>
+                        <p>Xiaomi</p>
+                        <p>Apple</p>
+                        <p>Artel</p>
+                        <p>Nokia</p>
+                        <p>Infinix</p>
+                        <p>OnePlus</p>
+                        <p>ZTE</p>
+                        <p>Blackview</p>
+                        <p>Oppo</p>
+                        <p>Ergo</p>
+                        <p>BQ</p>
+                        <p>Huawei</p>
+                        <p>Alcatel</p>
+                        <p>TCL</p>
+                        <p>Inoi</p>
+                        <p>Ko’proq</p>
+                    </div>
+
+                    <div class="flex">
+
+                        <div class="w-[208px]">
+                            <div class="mb-10">
+                                <p class="mb-2 font-medium">Samsung brendi</p>
+                                <p>S serialar</p>
+                                <p>A serialar</p>
+                                <p>Note serilar</p>
+                                <p>M serialar</p>
+                            </div>
+                            <div class="mb-9">
+                                <p class="mb-2 font-medium">Redmi & Xiaomi</p>
+                                <p>S serialar</p>
+                                <p>A serialar</p>
+                                <p>Note serilar</p>
+                                <p>M serialar</p>
+                            </div>
+                            <div>
+                                <p class="mb-2 font-medium">Apple brendi</p>
+                                <p>S serialar</p>
+                                <p>A serialar</p>
+                                <p>Note serilar</p>
+                                <p>M serialar</p>
+                            </div>
+                        </div>
+
+                        <div class="w-[208px]">
+                            <div class="mb-9">
+                                <p class="mb-2 font-medium">Huawei</p>
+                                <p>S serialar</p>
+                                <p>A serialar</p>
+                                <p>Note serilar</p>
+                                <p>M serialar</p>
+                            </div>
+                            <div class="mb-9">
+                                <p class="mb-2 font-medium">Eng ommabop</p>
+                                <p>S serialar</p>
+                                <p>A serialar</p>
+                                <p>Note serilar</p>
+                                <p>M serialar</p>
+                            </div>
+                            <div>
+                                <p class="mb-2 font-medium">Eng arzonlari</p>
+                                <p>S serialar</p>
+                                <p>A serialar</p>
+                                <p>Note serilar</p>
+                                <p>M serialar</p>
+                            </div>
+                        </div>
+
+                        <div class="w-[208px]">
+                            <div class="mb-9">
+                                <p class="mb-2 font-medium">Huawei mobile</p>
+                                <p>S serialar</p>
+                                <p>A serialar</p>
+                                <p>Note serilar</p>
+                                <p>M serialar</p>
+                            </div>
+                            <div class="mb-9">
+                                <p class="mb-2 font-medium">Huawei mobile</p>
+                                <p>S serialar</p>
+                                <p>A serialar</p>
+                                <p>Note serilar</p>
+                                <p>M serialar</p>
+                            </div>
+                            <div>
+                                <p class="mb-2 font-medium">Huawei mobile</p>
+                                <p>S serialar</p>
+                                <p>A serialar</p>
+                                <p>Note serilar</p>
+                                <p>M serialar</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div> -->
+
+
+
     <!-- Header section start -->
     <header class="sticky top-0 z-10 shadow-black lg:shadow-xl bg-[#fff]">
         <div class="container px-4 mx-auto">
@@ -39,33 +245,35 @@
                 </select>
             </div>
 
-            <div class="header-bottom pt-[13px] pb-[11px]">
+            <div class="header-bottom pt-[12px] pb-[10px]">
                 <ul class="flex items-center justify-between gap-[50px]">
                     <li><a href="index.html">
                             <img src="./assets/images/Logo.svg" alt="Logo">
                         </a></li>
-                    <li><a href="#"><button
-                                class="katalog text-white rounded-lg py-[11px] pl-[18px] pr-[19px] flex items-center gap-3 text-base font-[591]"><i
-                                    class='bx bx-menu text-2xl'></i>Katalog</button></a></li>
+                    <li><button id="catalog-btn"
+                            class="katalog text-white rounded-lg py-[11px] pl-[18px] pr-[19px] flex items-center gap-3 text-base font-[591]"><i
+                                class='bx bx-menu text-2xl'></i>Katalog</button></li>
 
                     <li class="flex items-center"><input type="text" placeholder="Maxsulotlarni izlash"
                             class="cursor-pointer h-[46px] border-[1px] pt-[14px] pb-[13px] pr-[157px] pl-[18px] rounded-l-[8px] placeholder:text-[#6C757D] border-[#E4E7EE] outline-none"><i
                             class='bx bx-search py-[11px] px-[18px] bg-[#0D63F3] h-[46px] flex justify-center items-center text-white rounded-r-[8px] cursor-pointer'></i>
                     </li>
 
-                    <li class="mr-[-60px]"><a href="#"><img src="./assets/images/favorite.svg" alt="favorite"
+                    <li class="mr-[-40px]"><a href="#"><img src="./assets/images/favorite.svg" alt="favorite"
                                 class="cursor-pointer"></a>
                     </li>
                     <li><a href="#"><img src="./assets/images/Korzina.svg" alt="Korzina" class="cursor-pointer"></a>
                     </li>
-                    <li><a href="#"><button
-                                class="kirish-btn py-[13px] px-[35px] rounded-[10px] text-[#101828] font-[539] ">Kirish</button></a>
+                    <li><button id="enter-btn"
+                            class="kirish-btn py-[13px] px-[35px] rounded-[10px] text-[#101828] font-[539] ">Kirish</button>
                     </li>
+                    <li><img src="./assets/images/user.svg" alt="user" id="user-account" class="rounded-[50%]"></li>
                 </ul>
             </div>
         </div>
     </header>
     <!-- Header section end -->
+
 
     <!-- Main section start -->
     <main class="bg-[#ECF4FF] z-[-5]">
@@ -863,6 +1071,8 @@
     </main>
     <!-- Main section end -->
 
+
+    <!-- Footer section start -->
     <footer class="pt-[60px]">
         <div class="container px-4 mx-auto">
             <div class="flex justify-between">
@@ -921,8 +1131,11 @@
             </div>
         </div>
     </footer>
+    <!-- Footer section end -->
+
 </body>
 
+<!-- Bootstrap link -->
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
     integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
     crossorigin="anonymous"></script>
@@ -930,7 +1143,12 @@
     integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
     crossorigin="anonymous"></script>
 
+
+<!-- connected Js data file -->
 <script src="./db.js"></script>
+
+
+<!-- connected Js file -->
 <script src="./script.js"></script>
 
 </html>

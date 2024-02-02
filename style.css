@@ -28,3 +28,9 @@
 footer {
     background: linear-gradient(270deg, rgba(77, 94, 246, 0.20) 0%, rgba(246, 77, 77, 0.20) 100%);
 }
+
+.check {
+    border-width: 1px;
+    border-color: #4d50f6;
+    color: blue;
+}
